@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/data_tv"
         android:layout_width="wrap_content"
@@ -36,9 +35,9 @@
         android:id="@+id/line"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
+        android:background="@color/linecolor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/linecolor"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout" />
 
     <LinearLayout
@@ -84,6 +83,7 @@
                 android:onClick="onOperatorClick"
                 android:text="/"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:gravity="center"
@@ -115,6 +115,7 @@
                 android:onClick="onOperatorClick"
                 android:text="*"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linearLayout4"
             android:gravity="center"
@@ -147,6 +148,7 @@
                 android:onClick="onOperatorClick"
                 android:text="+" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
@@ -178,6 +180,7 @@
                 android:onClick="onOperatorClick"
                 android:text="-"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linearLayout6"
             android:gravity="center"
