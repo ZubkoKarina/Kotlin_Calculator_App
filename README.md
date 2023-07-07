@@ -1,3 +1,5 @@
 # Simple_android_calculator
-![image](https://github.com/ZubkoKarina/Simple_android_calculator/assets/57664889/b5520add-7cc4-46a6-848a-f483aa224ae8) ![image](https://github.com/ZubkoKarina/Simple_android_calculator/assets/57664889/e8477f6f-0aa6-4053-b024-e24aaea35f4f)
+![image](https://github.com/ZubkoKarina/Simple_android_calculator/assets/57664889/29a8b61e-d28d-4766-83e7-46b2bbccce4c) ![image](https://github.com/ZubkoKarina/Simple_android_calculator/assets/57664889/93d75b57-f5ce-432d-ac97-89cf8c9b3747)
+
+
 
