@@ -11,28 +11,21 @@ import net.objecthunter.exp4j.ExpressionBuilder
 import net.objecthunter.exp4j.Expression
 import java.lang.Exception
 
-
 class MainActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityMainBinding
     var lastNymeric = false
     var stateError = false
     var lastDot = false
-
     private lateinit var expression: Expression
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
-
     fun onEqualClick(view: View) {
         OnEqual()
         binding.dataTv.text = binding.resultTv.text.toString().drop(1)
     }
-
-
     fun onDigitClick(view: View) {
         if(stateError) {
             binding.dataTv.text = (view as Button).text
@@ -43,8 +36,6 @@ class MainActivity : AppCompatActivity() {
         lastNymeric = true
         OnEqual()
     }
-
-
     fun onAllClearClick(view: View) {
         binding.dataTv.text = ""
         binding.resultTv.text = ""
@@ -53,8 +44,6 @@ class MainActivity : AppCompatActivity() {
         lastNymeric = false
         binding.resultTv.visibility = View.GONE
     }
-
-
     fun onOperatorClick(view: View) {
         if(!stateError && lastNymeric){
             binding.dataTv.append((view as Button).text)
@@ -64,8 +53,6 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-
-
     fun onBackClick(view: View) {
         binding.dataTv.text = binding.dataTv.text.toString().dropLast(1)
         try{
@@ -79,8 +66,6 @@ class MainActivity : AppCompatActivity() {
             Log.e("last char error", e.toString())
         }
     }
-
-
     fun onCliarClick(view: View) {
         binding.dataTv.text = ""
         binding.resultTv.text = ""
@@ -89,8 +74,6 @@ class MainActivity : AppCompatActivity() {
         lastNymeric = false
         binding.resultTv.visibility = View.GONE
     }
-
-
     fun OnEqual(){
         if(lastNymeric && !stateError){
             val txt = binding.dataTv.text.toString()
